@@ -1,11 +1,13 @@
 Simple Validation
 ===================================  
 
-### Sample
+How to build your Simple Validation
+----------------------------
 
+```
 <script type="text/javascript">
 	 $(document).ready(function () {
-	 	//新增一個區塊驗證物件
+	//新增一個區塊驗證物件
         field1 = new ValidMode();
         //初始化偵測當前頁面所要被驗證的欄位
          //範例 : field1.valid_Init('所要驗證的Class名稱','必填提示字串','提示LabelCss樣式','驗證正確圖檔位置');
@@ -53,3 +55,4 @@ Simple Validation
 	 	field2.ClearValid();
 	 }
 </script>
+```
