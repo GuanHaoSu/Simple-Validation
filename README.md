@@ -3,7 +3,39 @@ Simple Validation
 
 How to build your Simple Validation
 ----------------------------
+### Add a class name to your input element for validation to set it is required, try something like 'valid'.
 
+```
+ <div id="field1">
+ <label class="control-label col-md-2" >±K½X</label>
+ <input class="text-box single-line valid" id="password" type="password">
+ </div>
+
+```
+### Then new a validation object in your javascript code and init it, you must give it a validation class name, required tip, tip label's css style and check correct image.
+```
+field1 = new ValidMode();
+field1.valid_Init('Class Name(valid)','required tip','Label Css style','check correct image');
+
+```
+### You can add specific regular expression to validate your input distinctly.
+```
+field1.AddRegexPatern('element ID(password)',regular expression, 'Tip words');
+
+```
+### Also you can init the auto validate to detect your input.
+
+```
+field1.KeyPressInit();
+
+```
+### Clear all tip words.
+
+```
+field1.KeyPressInit();
+
+```
+### Sample Code
 ```
 <script type="text/javascript">
 	 $(document).ready(function () {
