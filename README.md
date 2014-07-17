@@ -38,7 +38,7 @@ field1.valid_Init('Class Name(valid)','required tip','Label Css style','check co
 field1.AddRegexPatern('element ID(password)',regular expression, 'Tip words');
 
 ```
-### Also, you can init the auto validate to detect your input.
+### Also, you can init the auto validation to detect your input.
 
 ```
 field1.KeyPressInit();
