@@ -25,6 +25,14 @@ field1 = new ValidMode();
 field1.valid_Init('Class Name(valid)','required tip','Label Css style','check correct image');
 
 ```
+### Run your validation. 
+```
+ var pass = field1.runValid();
+         if (pass === true) {
+         	alert('Pass!!!');
+         }
+
+```
 ### You can add specific regular expression to validate your input distinctly.
 ```
 field1.AddRegexPatern('element ID(password)',regular expression, 'Tip words');
