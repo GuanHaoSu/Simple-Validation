@@ -3,6 +3,13 @@ Simple Validation
 
 How to build your Simple Validation
 ----------------------------
+### Firstly, include Jquery and SimpleValid in your web page.
+```
+<script src="./js/jquery-1.10.2.min.js"></script>
+<script src="./js/SimpleValid.js"></script>
+
+```
+
 ### Add a class name to your input element for validation to set it is required, try something like 'valid'.
 
 ```
