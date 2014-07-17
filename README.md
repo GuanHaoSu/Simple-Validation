@@ -47,7 +47,7 @@ field1.KeyPressInit();
 ### Clear all tip words.
 
 ```
-field1.KeyPressInit();
+field1.ClearValid();
 
 ```
 ### Sample Code
@@ -71,7 +71,6 @@ field1.KeyPressInit();
 
         //新增另一個區塊驗證物件
         field2 = new ValidMode();    
-        //field2.ClassName = "valid2";
         field2.valid_Init('valid2','必填欄位','color:red;font-family: arial;font-size:large;','./img/checkmark_small.gif');
         field2.AddRegexPatern('email2', /^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z]+$/, '請輸入正確的電子郵件格式');
         field2.AddRegexPatern('phone2', /^\d+$/, 'Pleas enter the phone number');
@@ -79,7 +78,6 @@ field1.KeyPressInit();
     });
 
 	 function SaveClick(){
-	 	// field1.ClearValid();
 	 	 //執行驗證程序 不符合驗證規則回傳false 符合回傳true
         var pass = field1.runValid();
          if (pass === true) {
